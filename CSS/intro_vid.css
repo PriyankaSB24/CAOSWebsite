@@ -1,11 +1,24 @@
 html {
   font-family: sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   /*scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;*/
 }
 
-body {width: auto!important; overflow-x: hidden!important}
+body {
+  width: 100%!important;
+  max-width: 100%!important;
+  overflow-x: hidden!important;
+  margin: 0;
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 img {
   max-width:100%;
@@ -14,28 +27,94 @@ img {
 
 .sectionintrovid {
   width: 100%;
+  height: 100vh;
   max-height: 100vh;
   text-align: left;
   position: relative;
+  margin-top: 0;
+  background: #05070d;
+  overflow: hidden;
 }
 
 .intro-vid {
   width: 100%;
-  right: 0; 
+  height: 100%;
+  right: 0;
   top: 0;
   position: relative;
   overflow: hidden;
   z-index: 0;
+  background: #05070d;
+  object-fit: cover;
 }
 
 .gradient-intro-purpose {
-  background: linear-gradient(to bottom, #1f3b6a00, #1f3b6a 95%, #1f3b6a);
+  background: linear-gradient(to bottom, rgba(13,26,51,0) 0%, rgba(13,26,51,0.75) 60%, #0d1a33 100%);
   position: absolute;
-  height: 30%;
+  height: 38%;
   width: 100%;
   z-index: 5;
   opacity: 1;
-  top: 70%;
+  top: 62%;
+}
+
+.introvid-scrim {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(4,8,18,0.5) 0%, rgba(4,8,18,0.1) 30%, rgba(4,8,18,0.3) 100%);
+  z-index: 2;
+}
+
+.introvid-brand {
+  position: absolute;
+  bottom: 26%;
+  left: 4%;
+  z-index: 3;
+  text-align: left;
+  width: 90%;
+  max-width: 900px;
+}
+
+.introvid-brandtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 4.4vw;
+  color: white;
+  letter-spacing: 0.01em;
+  margin: 0;
+  line-height: 1.05;
+  white-space: nowrap;
+  filter: drop-shadow(0 0.12vw 0.5vw rgba(0,0,0,0.6));
+}
+
+.introvid-brandsub {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: #ec9752;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-top: 1.2vw;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .introvid-brand {
+    left: 5%;
+    bottom: 22%;
+  }
+  .introvid-brandtitle {
+    font-size: 8vw;
+    white-space: normal;
+  }
+  .introvid-brandsub {
+    font-size: 3vw;
+    white-space: normal;
+    margin-top: 2vw;
+  }
 }
 
 

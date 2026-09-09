@@ -1,95 +1,116 @@
-.parallaxreadytojoin {
-    background: url("Elements/sunsetpic.jpg");
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.contactfooter {
+    position: relative;
+    background: linear-gradient(180deg, #05070d 0%, #000000 100%);
+    padding: 4% 0;
 }
 
-.readytojoinwrapper{
-    width: 60%;
-    height: 80%;
-    padding: 10%;
-    padding-top: 8%;
-    padding-left: 3%;
-    
+.contactfooterwrapper {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
 }
 
-.readytojoinbox{
-    width: 75%;
-    height: 100%;
-    padding-top: 5%;
-    padding-left: 4%;
-    padding-bottom: 5%;
-    background-color: rgba(0, 0, 0, 0.68);
+.contactfooterleft {
+    flex: 1 1 40%;
+    min-width: 280px;
 }
 
-.readytojoinbox h {
-    font-family: 'Noto Serif';
-    font-size: 4.5vw;
+.contactfooterheading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: white;
+    margin: 0;
 }
 
 hr.linejoin {
-    align-self: center;
-    width:50%;
-    border: 1vh solid white;
+    align-self: flex-start;
+    width: 18%;
+    min-width: 60px;
+    border: 0.3vh solid #ec9752;
     opacity: 1;
-    margin-top: 4%;
-    margin-left: 1%;
+    margin: 1.2% 0 1.6% 0;
 }
 
-.readytojoinbox par {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.8vw;
-    color: white;
+.contactfooterleft par {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.95vw;
+    color: #c3cad6;
+    line-height: 1.6;
+    display: block;
 }
 
-.contactwrapper {
-    height: 6vw;
-    width: 95%;
-    position: relative;
-    margin-top: 5%;
+.contactfooterright {
+    flex: 1 1 40%;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9vw;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 4%;
 }
 
-.contact_button {
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
-    padding-top: 1vw;
-    transition-duration: 0.5s;
-    text-align: center;
+.contactsociallink {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0.8vw;
+    text-decoration: none;
+    color: #e6e9ef;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+    transition: color 0.2s ease;
 }
 
-.contact_button h{
-    font-family: 'Cantarell', sans-serif;
-    font-size: 2.5vw;
-    color: white;
-  }
-
-.contact_button:hover {
-    background-color: rgba(255, 255, 255, 0.226);
+.contactsociallink:hover {
+    color: #ec9752;
 }
 
+.contactsocialicon {
+    width: 2vw;
+    height: 2vw;
+    flex-shrink: 0;
+}
 
-.boxbottom {
+.sitefootercredit {
     width: 100%;
-    height: 12vw;
-    position: relative;
-    background-color: black;
-    padding-top: 5%;
-}
-
-
-.boxbottomwrapper {
-    width: 100%;
-    height: 40%;
+    background-color: #000000;
     text-align: center;
+    padding: 1.2% 0;
 }
 
-.boxbottomwrapper h{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5vw;
-    color: white;
+.sitefootercredit h {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.75vw;
+    color: #8a94a3;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .contactfooterheading {
+        font-size: 6vw;
+    }
+    .contactfooterleft par {
+        font-size: 3vw;
+    }
+    .contactsociallink {
+        font-size: 4vw;
+    }
+    .contactsocialicon {
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .sitefootercredit h {
+        font-size: 2.6vw;
+    }
 }

@@ -1,61 +1,109 @@
 .parallaxsponsors {
-    background: url("Elements/labsponsors.png");
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    background: linear-gradient(180deg, #000000 0%, #05070d 100%);
+    padding-bottom: 3%;
 }
 
 .sponsorstitle {
     position: relative;
     width: 100%;
-    height: 30%;
-    padding-top: 3%;
+    height: auto;
+    padding-top: 4%;
     text-align: center;
 }
 
 .sponsorstitle h{
-    font-family: 'Noto Serif';
-    font-size: 6.5vw;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 2.4vw;
     color: white;
-    filter: drop-shadow(0 0 6px black);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    filter: none;
 }
 
 .sponsorstext {
     position: relative;
-    width: 70%;
-    height: 30%;
-    margin-left: 15%;
-    padding-top: 1%;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0.8%;
+    padding-bottom: 2.4%;
     text-align: center;
 }
 
 .sponsorstext h{
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.8vw;
-    color: white;
-    filter: drop-shadow(0 0 6px black);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.95vw;
+    color: #b9c2d1;
+    filter: none;
 }
 
 .sponsorslogoflexbox {
     position: relative;
     display: flex;
-    width: 90%;
+    width: 88%;
     height: 100%;
     margin-top: 1%;
-    margin-left: 5%;
-    justify-content: space-evenly;
+    margin-left: 6%;
+    justify-content: center;
     flex-wrap: wrap;
-    Align-items: center;
-    padding-bottom: 5%;
+    align-items: stretch;
+    gap: 1.6vw;
+    padding-bottom: 3%;
 }
 
-.sponsorlogos {
-    height: auto;
-    max-width: 30%;
-    max-height: 30%;
-    padding: 3%;
-    filter: drop-shadow(0 0 4px black);
-  }
+.sponsorcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.96);
+    border-radius: 0.5vw;
+    box-shadow: 0 0.5vw 1.5vw rgba(0,0,0,0.45);
+    padding: 1.4vw 1.8vw;
+    min-width: 160px;
+    max-width: 22%;
+    flex: 1 1 18%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
+.sponsorcard:hover {
+    transform: translateY(-0.3vw);
+    box-shadow: 0 0.8vw 2vw rgba(0,0,0,0.55);
+}
+
+.sponsorcard img {
+    max-width: 100%;
+    max-height: 5.5vw;
+    object-fit: contain;
+}
+
+.sponsortextlogo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 0.95vw;
+    text-align: center;
+    color: #1f3d6a;
+    line-height: 1.35;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+  .sponsorstitle h {
+    font-size: 7vw;
+  }
+  .sponsorstext {
+    width: 88%;
+  }
+  .sponsorstext h {
+    font-size: 3vw;
+  }
+  .sponsorcard {
+    max-width: 40%;
+    flex: 1 1 40%;
+  }
+  .sponsortextlogo {
+    font-size: 2.6vw;
+  }
+}

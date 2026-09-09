@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <!-- Website made and managed by Alec Laprevotte :D -->
+<!-- Updated by Priyanka Supraja Balaji, September 2026 -->
 
 <html lang="en">
     <head>
@@ -9,6 +10,11 @@
         <title>Caltech CAOS</title>
         <link rel="shortcut icon" type="image/x-icon" href="CSS/Elements/calaiaa.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
         <link rel="stylesheet" href="CSS/navbar.css">
         <link rel ="stylesheet" href="CSS/intro_vid.css">
         <link rel ="stylesheet" href="CSS/Purpose.css">
@@ -18,18 +24,11 @@
         <link rel ="stylesheet" href="CSS/Sponsors.css">
         <link rel ="stylesheet" href="CSS/readytojoin.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@1,700&family=Open+Sans:wght@800&family=Roboto+Slab&display=swap" rel="stylesheet"> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        
-        
     </head>
 
     <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color :#1f3d6a28; position: absolute; z-index: 1;">
+    <nav class="navbar navbar-expand-lg navbar-dark sitenav">
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
         <span class="navbar-toggler-icon"></span>
         <span></span>
@@ -37,248 +36,399 @@
         </button>
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-box">
-                        <a class="d-none d-lg-block" href="#"><img src="CSS/Elements/calaiaa.ico" width = 60 height =60></a>
-                        <div class = "nav-title">
-                            Caltech Air and Outer Space
-                        </div>
-                    </li>
+                    <li class="nav-item nav-logo-item"><a href="#"><img src="CSS/Elements/calaiaa.png" class="nav-logo-img" alt="CAOS logo"></a></li>
                     <li class="nav-item"><a href="#purposeLINK" class="nav-link">Purpose</a></li>
                     <li class="nav-item"><a href="#projectsLINK" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#peopleLINK" class="nav-link">People</a></li>
                     <li class="nav-item"><a href="#SponsorsLINK" class="nav-link">Sponsors</a></li>
-                    <li class="nav-item"><a href="#JoiningLINK" class="nav-link">Join us!</a></li>
+                    <li class="nav-item"><a href="#JoiningLINK" class="nav-link">Contact</a></li>
                 </ul>
-        </div>  
+        </div>
     </nav>
 
     <div class = "sectionintrovid">
         <video class="intro-vid" autoplay loop muted>
             <source src="CSS/Elements/introvid.mp4" type="video/mp4">
         </video>
+        <div class = "introvid-scrim"></div>
+        <div class = "introvid-brand">
+            <h class = "introvid-brandtitle">Caltech Air &amp; Outer Space</h>
+            <h class = "introvid-brandsub">AIAA Student Branch</h>
+        </div>
         <div class = "gradient-intro-purpose"></div>
-    </div class = "sectionintrovid">
+    </div>
 
-    
     <div id = "purposeLINK" class = "purpose">
         <div class = "purposetitle">
-            <h>SPEARHEADING STUDENT</h>
-            <h1>INNOVATION</h1>
-            <par>Caltech Air and Outer Space strives to provide career advancement opportunities and technical skills through student led projects, while also pioneering cutting-edge aerospace engineering research. We believe in providing students with the freedom and opportunity to lead and contribute to complex engineering ventures is the best way to form the aerospace professionals and leaders of tomorrow.</par>
+            <p class = "missioneyebrow">Our Mission</p>
+            <h1 class = "missionheadline"><em>Spearheading Aerospace Innovation</em></h1>
+            <p class = "missionblurb">We design, build, and launch innovative aerospace systems through hands-on projects and design challenges. By tackling ambitious problems from concept to launch, we develop the engineers and leaders who will shape the future of space exploration.</p>
         </div>
         <div class = "purposedtriflexbox">
             <div class = "purposedtriflexitem">
                 <img src="CSS/Elements/TRI_purpose_dust.jpg">
-                <!-- <div class = "trihoverdesc">
-                    <des>Accurate tests that replicate the atmosphere of our mission destinations are essential for our engineering projects. Through partnerships with different regolith simulant labs, we've been able to rigorously evaluate our hardware's compatibility with lunar terrain.</des>
-                </div> -->
             </div>
             <div class = "purposedtriflexitem">
                 <img src="CSS/Elements/TRI_purpose_wiring.jpg">
-                <!-- <div class = "trihoverdesc">
-                    <des>While always seeking to plan for any possible complications, the ability to adapt to unexpected challenges is an essential to any engineer. And while we have run into some of these issues on the field, they've never stopped us from successfully performing our tests!</des>
-                </div> -->
             </div>
             <div class = "purposedtriflexitem">
                 <img src="CSS/Elements/TRI_purpose_shuttle.jpeg">
-                <!-- <div class = "trihoverdesc">
-                    <des>Being located at Caltech, besides granting access to world class mentors and laboratories, also gives us another noteworthy advantage: our proximity to the Mojave Desert allows for large scale testing of future lunar architecture in rugged terrain!</des>
-                </div> -->
             </div>
         </div>
         <div class = "TRANSpurposegrad"></div>
     </div>
-    
+
+    <div class = "missionquote">
+        <h>&ldquo;They are a model of future aerospace engineers that NASA and industry needs.&rdquo;</h>
+        <author>Dr. Charles Elachi, JPL Director 2001&ndash;2016</author>
+    </div>
+
+    <div class = "achievements">
+        <h1 class = "impacttitle">Our Impact</h1>
+        <div class = "achievementsflex">
+            <div class = "achievementitem">
+                <h class = "achievementnum">$185K+</h>
+                <h class = "achievementlabel">in NASA funding and prizes won</h>
+            </div>
+            <div class = "achievementitem">
+                <h class = "achievementnum">5+</h>
+                <h class = "achievementlabel">NASA challenges entered</h>
+            </div>
+            <div class = "achievementitem">
+                <h class = "achievementnum">3+</h>
+                <h class = "achievementlabel">rovers built for lunar terrain</h>
+            </div>
+            <div class = "achievementitem">
+                <h class = "achievementnum">3+</h>
+                <h class = "achievementlabel">high-altitude balloon payloads launched</h>
+            </div>
+            <div class = "achievementitem">
+                <h class = "achievementnum">2020</h>
+                <h class = "achievementlabel">founded</h>
+            </div>
+        </div>
+        <div class = "impactextra">
+            <p>Beyond competitions, CAOS runs an industry speaker series and lab tours with companies like NASA JPL, Apex Aerospace, Vast Aerospace, hosts hands-on K&#8211;12 STEM outreach, and offers members AIAA memberships and resume/interview workshops.</p>
+        </div>
+    </div>
+
     <div class = "projects" id = "projectsLINK">
-        
+
         <div class = "starywrapper">
             <div id='stars1'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
+            <div class = "projectscarousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" style="position: relative;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9" style = "z-index: 6;"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10" style = "z-index: 6;"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="CSS/Elements/Sept2026/kennedyteampic.jpg" class="d-block w-100" alt="CAOS team at NASA Kennedy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/Sept2026/globolaunchpic.jpeg" class="d-block w-100" alt="GLOBO balloon launch">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/Sept2026/globoballonteam.jpeg" class="d-block w-100" alt="GLOBO balloon team">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/Sept2026/CDR_2025_Team.jpg" class="d-block w-100" alt="CAOS CDR 2025 team">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/Sept2026/rover.jpg" class="d-block w-100" alt="NASA Lunabotics rover">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="CSS/Elements/bobapic.jpg" class="d-block w-100" alt="..." >
+                        </div>
+                        <div class="carousel-item">
+                        <img src="CSS/Elements/forumpic.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/dinnerpic.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/outsidesitpic.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/Elements/work_homes_pic.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style = "z-index: 6;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style = "z-index: 6;">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </button>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+                </div>
+            </div>
+
             <div class = "projectstitle">
-                <hr class = "lineproject">
-                <h>PROJECTS</h>
-                <hr class = "lineproject"> 
-            </div>
-            <div class = "projectqu">
-                <h>"They are a model of future aerospace engineers that NASA and industry needs."</h><br>
-                <h style = "font-size: 10px;"> </h><br>
-                <author>Dr. Charles Elachi, JPL Director 2001-2016</author>
+                <h class = "impacttitle">Projects</h>
             </div>
 
-            <div class = "projectbannerflex" style = "margin-top: 1%;">
-                <div class = "projecttext">
-                    <div class = "projecttitle">
-                        <h>PILLARS</h>
-                    </div>
-                    <div class = "projectdsec">
-                        <des>PILLARS is a Plume Deployed Inflatable for Launch/Landing Abrasive Regolith Shielding. In Winter 2024, PILLARS was awarded as a finalist of the 2024 BIG Idea Challenge for an innovative solution mitigating dust kicked up on the lunar surface during rocket launches and landings. We are currently developing our system to present at the BIG Idea Forum in November 2024. </des>
-                    </div>
+            <div class = "projecttilegrid">
+
+                <div class = "projecttile" onclick="openProjectModal('lunabotics')">
+                    <img class = "projecttilelogo projecttilelogo-zoom" src="CSS/Elements/Sept2026/lunabotics_logo.PNG">
+                    <h class = "projecttilelabel">NASA Lunabotics</h>
                 </div>
-                <div class = "projectlogo" style = "margin-right: 1%;">
-                    <img src="CSS/Elements/PILLARS_logo.png">
+
+                <div class = "projecttile" onclick="openProjectModal('coverguard')">
+                    <img class = "projecttilelogo projecttilelogo-zoom" src="CSS/Elements/Sept2026/coverguard_logo.PNG">
+                    <h class = "projecttilelabel">NASA Space to Soil Challenge: CoverGuard</h>
                 </div>
+
+                <div class = "projecttile" onclick="openProjectModal('globo')">
+                    <img class = "projecttilelogo projecttilelogo-zoom" src="CSS/Elements/Sept2026/globo_logo.PNG">
+                    <h class = "projecttilelabel">GLOBO</h>
+                </div>
+
+                <div class = "projecttile" onclick="openProjectModal('pillars')">
+                    <img class = "projecttilelogo" src="CSS/Elements/PILLARS_logo.png">
+                    <h class = "projecttilelabel">PILLARS</h>
+                </div>
+
+                <div class = "projecttile" onclick="openProjectModal('crater')">
+                    <img class = "projecttilelogo" src="CSS/Elements/URC_Logo.png">
+                    <h class = "projecttilelabel">CRATER</h>
+                </div>
+
+                <div class = "projecttile" onclick="openProjectModal('lattice')">
+                    <img class = "projecttilelogo" src="CSS/Elements/LATTICE_logo.png">
+                    <h class = "projecttilelabel">LATTICE</h>
+                </div>
+
+                <div class = "projecttile" onclick="openProjectModal('homes')">
+                    <img class = "projecttilelogo" src="CSS/Elements/HOMES_logo.png">
+                    <h class = "projecttilelabel">HOMES</h>
+                </div>
+
             </div>
 
-            <div class = "projectbannerflex" style = "margin-top: 6%; text-align: right;">
-                <div class = "projectlogo" style = "margin-left: 2%;">
-                    <img src="CSS/Elements/URC_Logo.png">
-                </div>
-                <div class = "projecttext">
-                    <div class = "projecttitle">
-                        <h>CRATER</h>
-                    </div>
-                    <div class = "projectdsec">
-                        <des>CRATER is developing a modular rover that can robustly interface with other robotics systems to initiate complex mission operations in extreme environments. Remotely operated from 2km away, CRATER's rover will be capable of performing high-precision tasks with a robotic arm, collecting rock and soil samples with on-board analysis, and autonomously navigating to target GPS coordinates.</des>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class = "projectbannerflex" style = "margin-top: 1%;">
-                <div class = "projecttext">
-                    <div class = "projecttitle">
-                        <h>LATTICE</h>
-                    </div>
-                    <div class = "projectdsec">
-                        <des>LATTICE is a modular, self-deploying robotic infrastructure system for transportation of cargo through lunar craters. Since its origins in 2021, LATTICE has grown to become a multi-university and industry endeavour to develop a robotic system of sustainable, permanent lunar infrastructure to support the upcoming ARTEMIS and commercial missions to the moon.</des>
-                        
-                    </div>
-                </div>
-                <div class = "projectlogo" style = "margin-right: 1%;">
-                    <img src="CSS/Elements/LATTICE_logo.png">
-                </div>
-            </div>
-
-            <div class = "projectbannerflex" style = "margin-top: 6%;">
-                <div class = "projectlogo" style = "margin-right: 1%;">
-                    <img src="CSS/Elements/HOMES_logo.png">
-                </div>
-                <div class = "projecttext">
-                    <div class = "projecttitle">
-                        <h>HOMES</h>
-                    </div>
-                    <div class = "projectdsec">
-                        <des>The Habitat, Orientable and Modular Electodynamic Shield is a configurable dust mitigation solution for lunar habitats. As CAOS's first technical project, it was awarded as a finalist of the 2021 NASA BIG Idea Lunar Dust Challenge. The team of undergraduates designed, verified and validated the novel technology to TRL 5 in one year.</des>
-                        
-                    </div>
-                </div>
-            </div>
-
-        <div class = "buffer_bottomprojects"></div>
+        <div class = "buffer_bottomprojects">
         </div>
-        
+
         <div class = "transition_people"></div>
     </div>
 
-    <div class = "people" id = "peopleLINK">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style = "z-index: 6;"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style = "z-index: 6;"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style = "z-index: 6;"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" style = "z-index: 6;"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" style = "z-index: 6;"></button>
+    <div id = "projectModalOverlay" class = "projectmodaloverlay" onclick="closeProjectModal(event)">
+        <div class = "projectmodalbox">
+            <button class = "projectmodalclose" onclick="closeProjectModal(event)" aria-label="Close">&times;</button>
+            <img id = "projectModalLogo" class = "projectmodallogo" src="" alt="">
+            <h id = "projectModalTitle" class = "projectmodaltitle"></h>
+            <p id = "projectModalDesc" class = "projectmodaldesc"></p>
+            <button id = "projectModalMoreBtn" class = "projectmodalmorebtn" onclick="toggleProjectMore()">See videos &amp; coverage &darr;</button>
+            <div id = "projectModalMore" class = "projectmodalmore">
+                <div id = "projectModalVideos" class = "projectmodalvideos"></div>
+                <div id = "projectModalLinks" class = "projectmodallinks"></div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="CSS/Elements/bobapic.jpg" class="d-block w-100" alt="..." >
-                </div>
-                <div class="carousel-item">
-                <img src="CSS/Elements/forumpic.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="CSS/Elements/dinnerpic.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="CSS/Elements/outsidesitpic.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="CSS/Elements/work_homes_pic.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style = "z-index: 6;">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style = "z-index: 6;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-            </button>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-            <div class = "lower_carousel_grad"></div>
         </div>
+    </div>
+
+    <script>
+        const projectData = {
+            lunabotics: {
+                title: "NASA Lunabotics",
+                logo: "CSS/Elements/Sept2026/lunabotics_logo.PNG",
+                desc: "The CAOS team designed and built a lunar rover capable of navigating simulated lunar terrain, excavating regolith, and constructing protective berms. The six-wheel rocker-bogie rover features brushless motors, a bucket excavator with pivoting arm, and full onboard autonomy powered by an NVIDIA Jetson Nano with 4D LiDAR and a depth camera. The team traveled to Florida to compete in person at the University of Central Florida.",
+                videos: ["ZENOp3-Nr3k", "XTb9p00F0EE"],
+                links: []
+            },
+            coverguard: {
+                title: "NASA Space to Soil Challenge: CoverGuard",
+                logo: "CSS/Elements/Sept2026/coverguard_logo.PNG",
+                desc: "CAOS was a finalist in NASA's Space to Soil Challenge, developing CoverGuard &mdash; a SmallSat constellation concept that uses onboard AI and adaptive sensing to monitor cover crop health and flag failures from orbit. CoverGuard advanced to the in-person pitch competition in Washington, D.C. as one of 10 teams nationwide, presenting directly to NASA challenge judges.",
+                videos: ["Kg7ZKZ6pY6k"],
+                links: [
+                    {label: "NASA Space to Soil: CAOS finalist page", url: "https://nasa-space-to-soil.org/finalists/caltech-air-and-outer-space"},
+                    {label: "Caltech EAS: Space to Soil finalist announcement", url: "https://www.eas.caltech.edu/news/finalist-in-nasa-space-to-soil-challenge"}
+                ]
+            },
+            globo: {
+                title: "GLOBO",
+                logo: "CSS/Elements/Sept2026/globo_logo.PNG",
+                desc: "GLOBO is a high-altitude balloon mission tracking environmental emissions, built entirely by first-year students. It launched in June 2025 from the Mojave Desert, reaching over 20 kilometers in altitude on a payload built for under $1,000. After a four-hour flight, the team recovered it near Joshua Tree with data collected throughout.",
+                videos: ["ACOUn_jzYMI"],
+                links: [
+                    {label: "Caltech News: first-year students launch high-altitude mission", url: "https://www.caltech.edu/about/news/first-year-students-launch-high-altitude-mission-for-climate-research"}
+                ]
+            },
+            pillars: {
+                title: "PILLARS",
+                logo: "CSS/Elements/PILLARS_logo.png",
+                desc: "PILLARS is a Plume Deployed Inflatable for Launch/Landing Abrasive Regolith Shielding &mdash; a finalist solution in the NASA BIG Idea Challenge for mitigating dust kicked up during lunar rocket launches and landings.",
+                videos: [],
+                links: [
+                    {label: "AIAA SciTech paper: PILLARS", url: "https://arc.aiaa.org/doi/abs/10.2514/6.2025-4126"}
+                ]
+            },
+            crater: {
+                title: "CRATER",
+                logo: "CSS/Elements/URC_Logo.png",
+                desc: "CRATER is a modular rover built to interface with other robotics systems for complex operations in extreme environments &mdash; performing precision arm tasks, collecting samples with onboard analysis, and navigating autonomously to GPS targets from 2km away.",
+                videos: [],
+                links: []
+            },
+            lattice: {
+                title: "LATTICE",
+                logo: "CSS/Elements/LATTICE_logo.png",
+                desc: "LATTICE is a modular, self-deploying robotic infrastructure system for transporting cargo through lunar craters &mdash; now a multi-university and industry effort supporting upcoming Artemis and commercial lunar missions.",
+                videos: [],
+                links: [
+                    {label: "Caltech News: LATTICE named NASA finalist for second consecutive year", url: "https://www.caltech.edu/about/news/student-led-lunar-architecture-team-named-finalist-in-nasa-competition-for-second-consecutive-year"}
+                ]
+            },
+            homes: {
+                title: "HOMES",
+                logo: "CSS/Elements/HOMES_logo.png",
+                desc: "HOMES, the Habitat Orientable and Modular Electrodynamic Shield, is a configurable dust mitigation system for lunar habitats. It was selected as one of seven finalists in the 2021 NASA BIG Idea Challenge, won nearly $180,000 in funding, and went on to win the AIAA International Student Conference.",
+                videos: [],
+                links: []
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectData[key];
+            if (!data) return;
+            document.getElementById('projectModalTitle').textContent = data.title;
+            document.getElementById('projectModalDesc').innerHTML = data.desc;
+            const modalLogo = document.getElementById('projectModalLogo');
+            modalLogo.src = data.logo;
+            modalLogo.classList.toggle('projectmodallogo-zoom', ['lunabotics','coverguard','globo'].includes(key));
+
+            const videosEl = document.getElementById('projectModalVideos');
+            const linksEl = document.getElementById('projectModalLinks');
+            videosEl.innerHTML = data.videos.map(id =>
+                `<div class="projectmodalvideowrap"><iframe src="https://www.youtube.com/embed/${id}" title="Project video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+            ).join('');
+            linksEl.innerHTML = data.links.map(l =>
+                `<a href="${l.url}" target="_blank" rel="noopener">${l.label} &rarr;</a>`
+            ).join('');
+
+            const moreBtn = document.getElementById('projectModalMoreBtn');
+            const moreSection = document.getElementById('projectModalMore');
+            moreSection.classList.remove('open');
+            if (data.videos.length === 0 && data.links.length === 0) {
+                moreBtn.style.display = 'none';
+            } else {
+                moreBtn.style.display = 'inline-block';
+                moreBtn.textContent = 'See videos & coverage ↓';
+            }
+
+            document.getElementById('projectModalOverlay').classList.add('active');
+        }
+
+        function toggleProjectMore() {
+            const moreSection = document.getElementById('projectModalMore');
+            const moreBtn = document.getElementById('projectModalMoreBtn');
+            const isOpen = moreSection.classList.toggle('open');
+            moreBtn.textContent = isOpen ? 'Hide videos & coverage ↑' : 'See videos & coverage ↓';
+        }
+
+        function closeProjectModal(e) {
+            if (e.target.id === 'projectModalOverlay' || e.target.classList.contains('projectmodalclose')) {
+                document.getElementById('projectModalOverlay').classList.remove('active');
+            }
+        }
+    </script>
+
+    <div class = "people" id = "peopleLINK">
         <div class = "meetcrewtitle">
-            <h>MEET THE CREW</h>
-        </div> 
+            <h>Meet Our Leadership</h>
+        </div>
         <div class="cards_flex">
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/kgauld1/';">
-              <div class = "circleimage"> <img src="CSS/Elements/Gauld.jpeg"> </div>
-              <div class="name"> <h style = "font-size: 1.25vw;">Kevin Gauld</h> </div>
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/soon-jo-chung-899066126/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Soon-Jo.jpg"> </div>
+                <div class="name"> <h>Soon-Jo Chung</h> </div>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="position"> <h>Faculty Advisor</h> </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/priyanka-supraja-balaji-570728225/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Priyanka_Supraja_Balaji.jpg"> </div>
+                <div class="name"> <h>Priyanka Supraja Balaji</h> </div>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="position"> <h>Co-President</h> </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/stephanie-wallen-5a9776324/', '_blank');">
+              <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Stephanie_Wallen.jpg"> </div>
+              <div class="name"> <h>Stephanie Wallen</h> </div>
               <div class="bar">
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
               </div>
-              <div class="position"> <h>Co-Chair</h> </div> 
-            </div>
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/matteo-kimura-90879318b/';">
-                <div class = "circleimage"> <img src="CSS/Elements/Kimura.jpeg"> </div>
-                <div class="name"> <h style = "font-size: 1.25vw;">Matteo Kimura</h> </div>
-                <div class="bar">
-                  <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                </div>
-                <div class="position"> <h>Co-Chair</h> </div> 
-            </div>
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/lily-coffin-35528b189/';">
-                <div class = "circleimage"> <img src="CSS/Elements/Coffin.jpeg"> </div>
-                <div class="name"> <h style = "font-size: 1.25vw;">Lily Coffin</h> </div>
-                <div class="bar">
-                  <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                </div>
-                <div class="position"> <h>PILLARS Primary Lead</h> </div> 
-            </div>
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/jihyun-jeon-472780228/';">
-                <div class = "circleimage"> <img src="CSS/Elements/Jeon.jpeg"> </div>
-                <div class="name"> <h style = "font-size: 1.25vw;">Jihyun Jeon</h> </div>
-                <div class="bar">
-                  <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                </div>
-                <div class="position"> <h>CRATER Primary Lead</h> </div> 
+              <div class="position"> <h>Co-President</h> </div>
             </div>
 
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/yaoh/';">
-                <div class = "circleimage"> <img src="CSS/Elements/Huang.jpeg"> </div>
-                <div class="name"> <h style = "font-size: 1.25vw;">Fangyao Huang</h> </div>
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/noah-howell-0a2b23279/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Noah_Howell.jpeg"> </div>
+                <div class="name"> <h>Noah Howell</h> </div>
                 <div class="bar">
                   <div class="emptybar"></div>
                   <div class="filledbar"></div>
                 </div>
-                <div class="position"> <h>LATTICE Primary Lead</h> </div> 
-            </div>
-            
-            <div class="card" onclick="window.location='https://www.linkedin.com/in/soon-jo-chung-899066126/';">
-                <div class = "circleimage"> <img src="CSS/Elements/Soon-Jo.jpg"> </div>
-                <div class="name"> <h style = "font-size: 1.25vw;">Soon-Jo Chung</h> </div>
-                <div class="bar">
-                  <div class="emptybar"></div>
-                  <div class="filledbar"></div>
-                </div>
-                <div class="position"> <h style = "font-size: 1.25vw";>Faculty Advisor</h> </div> 
+                <div class="position"> <h>Lab Manager/Secretary</h> </div>
             </div>
 
-            <div class="card">
-                <div class="name" style = "text-align: left; padding-left: 5%; padding-top: 5%; padding-bottom: 5%;"> <h style = "font-size: 2vw; text-decoration: none;">... and our members!</h> </div>
-                <div class="bar" style = "justify-content: left; margin-left: 5%;">
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/parnika-singh-50a6387z67/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Parnika_Singh.jpg"> </div>
+                <div class="name"> <h>Parnika Singh</h> </div>
+                <div class="bar">
                   <div class="emptybar"></div>
                   <div class="filledbar"></div>
                 </div>
-                <div class="position" style = "text-align: left; margin-left: 5%; padding-top: 3%; padding-right: 8%;"> <h> As with any successful undertaking, the club's main driving force lies within it's members. Our students are the driving force that make all of our projects possible. </h>
-                </div> 
-            </div>                                      
+                <div class="position"> <h>External Affairs Lead</h> </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/ashwika-s/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Ashwika_Sharma.jpeg"> </div>
+                <div class="name"> <h>Ashwika Sharma</h> </div>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="position"> <h>External Affairs Lead</h> </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.linkedin.com/in/jennifer-cruden/', '_blank');">
+                <div class = "circleimage"> <img src="CSS/Elements/Sept2026/Jennifer_Cruden.png"> </div>
+                <div class="name"> <h>Jennifer Cruden</h> </div>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="position"> <h>Treasurer</h> </div>
+            </div>
+
+            <div class="card cardmembers">
+                <div class="name" style = "text-align: left; padding-left: 8%; padding-top: 8%; padding-bottom: 5%;"> <h style = "font-size: 1.7vw; text-decoration: none;">...and our incredible members!</h> </div>
+                <div class="bar" style = "justify-content: left; margin-left: 8%;">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+            </div>
         </div>
         <div class = "people_bottotmbuffer"></div>    
 
@@ -292,41 +442,63 @@
             <h>Our Sponsors</h>
         </div>
         <div class = "sponsorstext">
-            <h>Sponsorships allow us to continue our operations and grow as a student led club. From purchasing space-grade materials to using testing facilities, our business partners enable our continued commitment to science and engineering.</h>
+            <h>Our partners fuel the hardware, testing, and travel behind every CAOS mission.</h>
         </div>
 
         <div class = "sponsorslogoflexbox">
-            <div class = "sponsorlogos">
+            <div class = "sponsorcard">
                 <img src="CSS/Elements/caltech-logo.png">
             </div>
-            <div class = "sponsorlogos">
+            <div class = "sponsorcard">
                 <img src="CSS/Elements/EAS_logo.png">
             </div>
-            <div class = "sponsorlogos">
+            <div class = "sponsorcard">
                 <img src="CSS/Elements/galcit-logo.png">
             </div>
-        </div>
-
-
-    </div>
-
-    <div id = "JoiningLINK" class = "parallaxreadytojoin">
-        <div class = "readytojoinwrapper">
-            <div class = "readytojoinbox">
-                <h>Ready to join?</h>
-                <hr class = "linejoin">
-                <par style = "padding-right: 10%; padding-top: 4%;">Whether you're a Caltech student interested in joining, a university group looking for collaboration or a company interested in our technology, connections help us grow and allow us to continue focusing on pressing engineering challenges.</par>
-                <div class = "contactwrapper">
-                    <a href="https://www.linkedin.com/company/caltech-caos/" style = "text-decoration: none;">
-                        <div class = "contact_button">
-                            <h>Contact us!</h>
-                        </div>
-                    </a>
-                </div>
+            <div class = "sponsorcard">
+                <img src="CSS/Elements/Sept2026/aiaasgvlogo.png" alt="AIAA San Gabriel Valley Chapter">
             </div>
-            
+            <div class = "sponsorcard">
+                <h class = "sponsortextlogo">Caltech George W. Housner<br>Student Discovery Fund</h>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id = "JoiningLINK" class = "contactfooter">
+        <div class = "contactfooterwrapper">
+            <div class = "contactfooterleft">
+                <h class = "contactfooterheading">Contact Us</h>
+                <hr class = "linejoin">
+                <par>Questions about joining CAOS, collaborating on a project, or becoming a sponsor? We would love to hear from you.</par>
+            </div>
+            <div class = "contactfooterright">
+                <a class = "contactsociallink" href="https://www.linkedin.com/company/caltech-caos/posts/?viewAsMember=true" target="_blank" rel="noopener">
+                    <svg class = "contactsocialicon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a class = "contactsociallink" href="https://www.instagram.com/caltech.caos/" target="_blank" rel="noopener">
+                    <svg class = "contactsocialicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+                    <span>Instagram</span>
+                </a>
+                <a class = "contactsociallink" href="https://www.youtube.com/@aiaacaltech844" target="_blank" rel="noopener">
+                    <svg class = "contactsocialicon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.5 6.2a2.8 2.8 0 0 0-2-2C18.9 3.7 12 3.7 12 3.7s-6.9 0-8.5.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.8 2.8 2.8 0 0 0 2 2c1.6.5 8.5.5 8.5.5s6.9 0 8.5-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.8zM9.8 15.5V8.5L15.8 12z"/></svg>
+                    <span>YouTube</span>
+                </a>
+                <a class = "contactsociallink" href="mailto:aiaa.caltech@gmail.com">
+                    <svg class = "contactsocialicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+                    <span>aiaa.caltech@gmail.com</span>
+                </a>
+            </div>
         </div>
     </div>
+
+    <!--
+    <div class = "sitefootercredit">
+        <h>Website updated by Priyanka Supraja Balaji &mdash; September 2026</h>
+    </div>
+    -->
 
     </body>
 </html>
