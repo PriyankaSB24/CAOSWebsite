@@ -1,0 +1,61 @@
+.parallaxsponsors {
+    background: url("Elements/labsponsors.png");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sponsorstitle {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.sponsorstitle h{
+    font-family: 'Noto Serif';
+    font-size: 6.5vw;
+    color: white;
+    filter: drop-shadow(0 0 6px black);
+}
+
+.sponsorstext {
+    position: relative;
+    width: 70%;
+    height: 30%;
+    margin-left: 15%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.sponsorstext h{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8vw;
+    color: white;
+    filter: drop-shadow(0 0 6px black);
+}
+
+.sponsorslogoflexbox {
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin-top: 1%;
+    margin-left: 5%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    Align-items: center;
+    padding-bottom: 5%;
+}
+
+.sponsorlogos {
+    height: auto;
+    max-width: 30%;
+    max-height: 30%;
+    padding: 3%;
+    filter: drop-shadow(0 0 4px black);
+  }
+

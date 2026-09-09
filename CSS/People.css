@@ -1,0 +1,138 @@
+.people {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.lower_carousel_grad {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background-image: linear-gradient(transparent 0%, #000000 100%);
+  top: 90%;
+  z-index: 5;
+}
+
+.meetcrewtitle{
+    width: 100%;
+    padding: 1%;
+    position: relative;
+    text-align: center;
+    padding: 2%;
+}
+
+.meetcrewtitle h{
+    font-family: 'Noto Serif';
+    font-size: 5.5vw;
+    color: white;
+}
+
+.cards_flex {
+  position: relative;
+  display: flex;
+  padding-left: 2%;
+  flex: 0 1 24%
+}
+
+.card {
+  display: flex;
+  height: 23vw;
+  width: 15vw;
+  background-color: #f5f5f5dd !important;
+  border: 0.75vw solid #808080 !important;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin-left: 0;
+}
+
+.card:last-child {
+  margin-left: 0;
+  width: 28vw;
+}
+
+.card:hover {
+  transform: translateY(-3vw);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 5vw;
+  transition: 0.4s ease-out;
+}
+
+.name {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 0;
+}
+
+.name h{
+  color: black;
+  font-family: 'Noto Serif';
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.circleimage {
+  margin-left: 15%;
+  margin-top: 10%;
+  width:70%; 
+  clip-path: circle();
+  filter: drop-shadow(0 0 4px black);
+}
+
+.bar {
+  justify-content: center;
+  position: relative;
+  height: 1.5%;
+  width: 24%;
+  margin-left: 38%;
+  display: flex;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0%;
+  z-index: 3;
+  width: 0%;
+  height: 100%;
+  background: #2e3033;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 10vw;
+  transition: 0.4s ease-out;
+}
+
+.position {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 8%;
+  font-size: 0;
+}
+
+.position h{
+  color: black;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1.25vw;
+}
+
+.people_bottotmbuffer {
+  position: relative;
+  width: 100%;
+  height: 3vw;
+}

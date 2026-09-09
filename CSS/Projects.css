@@ -1,0 +1,176 @@
+.projects {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+  .starywrapper {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+  }
+
+  .projectstitle {
+    position: relative;
+    display: flex;
+    height: 25%;
+    width: 100%;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 0px;
+    justify-content:space-evenly;
+  }
+
+  .projectstitle h{
+    align-self: center;
+    font-family: 'Noto Serif';
+    font-size: 6vw;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  hr.lineproject {
+    align-self: center;
+    width:25%;
+    border: 1vh solid white;
+    opacity: 0.5;
+    border-radius: 1vh;
+  }
+
+  .projectqu {
+    height: 40%;
+    width: 100%;
+    margin-top: 2%;
+    font-size: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .projectqu h{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.1vw;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .projectqu author{
+    font-family: 'Cantarell', sans-serif;
+    font-size: 2vw;
+    color: white;
+    opacity: 0.8;
+  }
+
+
+
+  .projectbannerflex {
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .projecttext {
+    width: 70%;
+    height: 100%;
+    font-size: 0;
+  }
+
+  .projecttitle {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+
+  .projecttitle h{
+    font-family: 'Noto Serif';
+    font-size: 4vw;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .projectdsec {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    padding-left: 3%;
+    padding-right: 5%;
+  }
+
+  .projectdsec des{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8vw;
+    color: white;
+  }
+
+  .projectlogo {
+    height: auto;
+    max-width: 30%;
+    padding: 2%;
+    filter: drop-shadow(0 0 5px white);
+  }
+
+  .projectlearnmore {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    opacity: 0%;
+  }
+
+  .projectlearnmore:hover {
+    opacity: 100%;
+    transition: 1s;
+  }
+
+  .projectbutton {
+    width: 40%;
+    height: 40%;
+    margin: 8%;
+    background-color: #00000057;
+    border-radius: 20%;
+    display: flex;
+    border: 0.25vw solid white;
+    transition-duration: 0.5s;
+  }
+
+  .projectbutton h{
+    font-family: 'Cantarell', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    padding: 5%;
+    white-space: pre;
+  }
+
+  .projectbutton:hover {
+    background-color: #ffffff37;
+    border: 0.25vw solid gray;
+
+    /* Button Under Construction */
+    cursor:not-allowed;
+  }
+
+.buffer_bottomprojects {
+  position: relative;
+  height: 5vw;
+}
+
+.transition_people {
+  position: absolute;
+  width: 100%;
+  height: 9vw;
+  background-image: linear-gradient(transparent 0%, #000000 50%, #000000 60%, transparent 100%);
+  top: 96%;
+  z-index: 5;
+}
+
+
