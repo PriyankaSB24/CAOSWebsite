@@ -79,6 +79,26 @@
     object-fit: contain;
 }
 
+.sponsorcard-large {
+    max-width: 30%;
+    flex: 1 1 26%;
+}
+
+.sponsorcard-large img {
+    max-height: 9vw;
+}
+
+.sponsorcard-small {
+    min-width: 110px;
+    max-width: 11%;
+    flex: 0 1 10%;
+    padding: 0.9vw 1.1vw;
+}
+
+.sponsorcard-small img {
+    max-height: 3vw;
+}
+
 .sponsortextlogo {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
@@ -102,6 +122,20 @@
   .sponsorcard {
     max-width: 40%;
     flex: 1 1 40%;
+  }
+  .sponsorcard-large {
+    max-width: 60%;
+    flex: 1 1 60%;
+  }
+  .sponsorcard-large img {
+    max-height: 18vw;
+  }
+  .sponsorcard-small {
+    max-width: 28%;
+    flex: 0 1 28%;
+  }
+  .sponsorcard-small img {
+    max-height: 8vw;
   }
   .sponsortextlogo {
     font-size: 2.6vw;
